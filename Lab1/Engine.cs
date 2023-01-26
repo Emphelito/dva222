@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab1
+/*namespace Lab1
 {
     public class Engine
     {
@@ -19,50 +19,14 @@ namespace Lab1
                 Random rand = new Random();
 
 
-                for (int i = 0; i < size-1; i++)
+                for (int i = 0; i < size - 1; i++)
                 {
-                    int rand_nr = rand.Next(1,size*size);
+                    int rand_nr = rand.Next(1, size * size);
                     tmp.Add(rand_nr);
                 }
                 tmp.Add(0);
                 return tmp;
             }
-        }
-        public class Moving
-        {
-            public List<int> moveUp(List<int> puzzle, int emptyIndex)
-            {
-                puzzle.RemoveAt(emptyIndex);
-                puzzle.Insert(emptyIndex, puzzle[emptyIndex - Convert.ToInt32(Math.Sqrt(puzzle.Count()))]);
-                puzzle.RemoveAt(emptyIndex - Convert.ToInt32(Math.Sqrt(puzzle.Count())));
-                puzzle.Insert(emptyIndex - Convert.ToInt32(Math.Sqrt(puzzle.Count())), 0);
-                return puzzle;
-            }
-            public List<int> moveDown(List<int> puzzle, int emptyIndex)
-            {
-                puzzle.RemoveAt(emptyIndex);
-                puzzle.Insert(emptyIndex, puzzle[(emptyIndex-1) + Convert.ToInt32(Math.Sqrt(puzzle.Count()))]);
-                puzzle.RemoveAt(emptyIndex + Convert.ToInt32(Math.Sqrt(puzzle.Count())));
-                puzzle.Insert(emptyIndex + Convert.ToInt32(Math.Sqrt(puzzle.Count())), 0);
-                return puzzle;
-            }
-            public List<int> moveRight(List<int> puzzle, int emptyIndex)
-            {
-                puzzle.RemoveAt(emptyIndex);
-                puzzle.Insert(emptyIndex, puzzle[emptyIndex]);
-                puzzle.RemoveAt(emptyIndex + 1);
-                puzzle.Insert(emptyIndex + 1, 0);
-                return puzzle;
-            }
-            public List<int> moveLeft(List<int> puzzle, int emptyIndex)
-            {
-                puzzle.RemoveAt(emptyIndex);
-                puzzle.Insert(emptyIndex, puzzle[emptyIndex - 1]);
-                puzzle.RemoveAt(emptyIndex - 1);
-                puzzle.Insert(emptyIndex - 1, 0);
-                return puzzle;
-            }
-
         }
         public List<int> start_puzzle(int size)
         {
@@ -120,4 +84,4 @@ namespace Lab1
         
     }
 
-}
+}*/
